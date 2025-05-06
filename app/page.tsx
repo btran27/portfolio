@@ -162,7 +162,7 @@ export default function Home() {
               </Button>
             </form>
           </Form>
-        </Container>
+        </Container> 
       </div>
       <div className="bg-background h-12 w-full flex items-center justify-center">
         <div className="h-fit grid grid-cols-2 divide-x-2">

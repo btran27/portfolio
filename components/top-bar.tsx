@@ -80,6 +80,13 @@ export function TopBar() {
               </NavigationMenuLink>
             </Link>
           </NavigationMenuItem>
+          <NavigationMenuItem>
+            <Link href="/recipe" legacyBehavior passHref>
+              <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                Recipes
+              </NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
 
           <NavigationMenuItem>
             <Link
