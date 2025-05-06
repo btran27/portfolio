@@ -69,44 +69,68 @@ export default function Home() {
         <Container id="projects" className="flex flex-col gap-6">
           <h2>Projects</h2>
           <div>
-            <h3>Kiewit Garage</h3>
-            <p>Short Description of the Kiewit Garage project</p>
-            <Image
-              src="/cu_fsm_diagram.png"
-              alt="Diagram of CU FSM"
-              width={500}
-              height={300}
-            />
+            <h3>Project: Cardmatch</h3>
+            <p>Project: Cardmatch is a Card Mathing memory game that was developed and implemented in a special fashion. The full system uses a PS5 controller to interact with the Vivado Microblaze, which controls the game logic, 
+              to then send specific signals to the Nexys Video FPGA that takes care of producing the video output for the game.
+            </p>
+            <div className="mt-6">
+              <h3>Project Cardmatch Demo</h3>
+              <div className="w-full aspect-video mt-4 rounded-lg overflow-hidden shadow-md">
+                <iframe
+                  className="w-full h-full"
+                  src="https://youtube.com/embed/xWZMS8pMmm4"
+                  title="Cardmatch Demo"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
           <div>
-            <h3>Other Project</h3>
-            <p>Short Description of the other project</p>
-            <Image
-              src="/cu_fsm_diagram.png"
-              alt="Diagram of CU FSM"
-              width={500}
-              height={300}
-            />
+            <h3>Senior Capstone: Kiewit Garage Studio Manager</h3>
+            <p>The Kiewit Garage Studio Manager is UNL College-of-Engineering website that manages the logistics behind the Workshops, Warehouse, and Resources of the Kiewit Hall. Utilizing a Ruby/Sinatra and MySql Framework,
+               my team used the Nebraska Innovation Studio Website as a basis to develop Kiewit Garage specific features. Key features include Warehouse Storage, Tool Checkout, Status Page, and Integration of Single-Sign-On  
+            </p>
+              <Image
+                src="/Status.png"
+                alt="Garage Manager Status"
+                width={700}
+                height={500}
+                className=" m-4 rounded-md shadow-md"
+              />
+              <Image
+                src="/Checkout.png"
+                alt="Garage Manager Checkout"
+                width={700}
+                height={500}
+                className="m-4 rounded-md shadow-md"
+              />
           </div>
         </Container>
         <Container id="about_me">
           <h2>About Me</h2>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Here is a little description about me. Fill in some more details
-            here to make the site copy your own. Replace this paragraph with a
-            paragraph about yourself You have a lot of things that you like to
-            do, so maybe put them into a list.
+            I am a Computer Engineering Student that has a lot of side hobbies that I like to explore. 
           </p>
-          <h3 className="mt-6">Things I Like to Do</h3>
+          <h3 className="mt-6">Interests/Hobbies</h3>
           <div className="grid grid-cols-2 gap-4 divide-x-2">
             <ul className="list-disc pl-5 mt-4">
-              <li>Reading science fiction novels</li>
-              <li>Exploring new hiking trails</li>
-              <li>Practicing photography</li>
-              <li>Learning to play the guitar</li>
-              <li>Experimenting with cooking recipes</li>
+              <li>Model Kit Building</li>
+              <li>Mechanical Keyboard Building</li>
+              <li>Music</li>
+              <li>Cooking</li>
+              <li>Balisong Flipping</li>
+              <li>Cardistry</li>
+              <li>Reading</li>
+              <li>Playing Video Games</li>
+              <li>Sleeping</li>
             </ul>
-            <p>(Image of one of my favorite hobbies)</p>
+            <Image
+              src="/Calibarn.jpg"
+              alt="Gundam Calibarn"
+              width={300}
+              height={400}
+            />
           </div>
         </Container>
         <Container id="contact" className="flex flex-col gap-6">
